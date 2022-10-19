@@ -19,7 +19,7 @@ html body {
 }
 
 main {
-    padding: .8em;
+    padding: 1.1em;
     background-color: hsl(216, 50%, 16%);
     width: 250px;
     border-radius: .7rem;
@@ -116,6 +116,7 @@ footer p {
     font-size: .8rem;
     font-weight: 300;
     margin: 0 0 0 10px;
+    color: hsl(215, 51%, 70%);
 }
 
 footer p a{
