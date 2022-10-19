@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+html body {
+    background-color: hsl(217, 54%, 11%);
+    position: relative;
+}
+
+*::first-letter {
+    text-transform: capitalize;
+}
+
+main {
+    padding: .8em;
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    border-radius: .7rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(0, 50%);
+}
+
+.link:hover, .link :hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#imageContainer {
+    position: relative;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 1em;
+}
+
+.imgEye {
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: scale-down;
+    visibility: hidden;
+}
+
+#imageContainer a:hover .imgEye{
+    visibility: visible;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin: 12px 0 12px 0;
+}
+
+.info {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: .8rem;
+    margin: 12px 0 12px 0;
+}
+
+#infoDates {
+    display: flex;
+    justify-content: space-between;
+}
+
+#infoDates h2{
+    color: hsl(178, 100%, 50%);
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+#iconEth {
+    width: 9px;
+    margin-right: 5px;
+}
+
+#infoDates p {
+    font-size: .8rem;
+    color: hsl(215, 51%, 70%);
+    margin: 10px 0 10px 0;
+}
+
+#infoDates span {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#iconClock {
+    width: 17px;
+    margin-right: 5px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 10px 0 10px 0;
+}
+
+footer p {
+    font-size: .8rem;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+
+footer p a{
+    font-size: .8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#avatar {
+    width: 30px;
+    border-radius: 50%;
+    border: .1rem solid white;
+}
+
+@media (max-width: 375px) {
+
+    main {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 25%);
+    }
+
+}
